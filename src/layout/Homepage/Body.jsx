@@ -1,5 +1,10 @@
 import React from 'react'
 import CardServices from '../../components/CardServices'
+import Descript from '../../assets/descript.png'
+import Grammarly from '../../assets/grammarly.png'
+import Intercom from '../../assets/intercom.png'
+import Notion from '../../assets/notion.png'
+import Unsplash from '../../assets/unsplash.png'
 
 const Body = () => {
     return (
@@ -25,6 +30,30 @@ const Body = () => {
                 <CardServices title='SaaS' desc='Experience the Future of Software with SaaS!' />
                 <CardServices title='On Premise' desc='Unleash Full Control with ERP On-Premise!' />
                 <CardServices title='Virtual Private Server' desc='Unleash the Power of Virtual Private Servers. ' />
+            </div>
+            <div className='flex mt-[171px] gap-[128px] items-center'>
+                <div>
+                    <h1 className='text-[#191A15] text-[50px] font-semibold w-[537px] '>You Will Get The Best Services.</h1>
+                    <p className='text-[#A6A6A6] text-lg mt-9 font-medium leading-[30px]'>We offer a variety of interesting features that you can help<br /> increase yor productivity at work and manage your projrct esaly</p>
+                </div>
+                <div className='w-[659px] bg-[#000] h-[379px] rounded-[21px]'>
+                </div>
+            </div>
+            <h1 className='text-[#191A15] text-[40px] my-[120px] text-center font-bold'>Our Clients</h1>
+            <div className='flex justify-center items-center gap-[50px]'>
+                <img src={Unsplash} alt="" />
+                <img src={Notion} alt="" />
+                <img src={Intercom} alt="" />
+                <img src={Descript} alt="" />
+                <img src={Grammarly} alt="" />
+            </div>
+            <div className='flex mt-[62px] justify-center items-center gap-[50px]'>
+                <img src={Unsplash} alt="" />
+                <img src={Notion} alt="" />
+                <img src={Intercom} alt="" />
+                <img src={Descript} alt="" />
+                <img src={Grammarly} alt="" />
+                <img src={Unsplash} alt="" />
             </div>
         </div>
     )

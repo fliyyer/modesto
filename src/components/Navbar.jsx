@@ -65,7 +65,7 @@ export default function Navbar() {
                                     About Us
                                 </li>
                             </Link>
-                            <Link to="/">
+                            <Link to="/product">
                                 <li className="text-[#a6a6a6] font-bold hover:text-[#000]">
                                     Product
                                 </li>

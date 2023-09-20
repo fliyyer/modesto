@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Header from '../layout/Homepage/Header'
-import Body from '../layout/Homepage/Body'
+import Body from '../layout/Product/Body'
+import Header from '../layout/Product/Header'
 import Footer from '../components/Footer'
 
-const Homepage = () => {
+const Product = () => {
     return (
         <div>
             <Navbar />
@@ -15,4 +15,4 @@ const Homepage = () => {
     )
 }
 
-export default Homepage
+export default Product
