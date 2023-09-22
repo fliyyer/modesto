@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Header from '../layout/Homepage/Header'
 import Body from '../layout/Homepage/Body'
 import Footer from '../components/Footer'
+import Content from '../layout/Homepage/Content'
 
 const Homepage = () => {
     return (
@@ -10,6 +11,7 @@ const Homepage = () => {
             <Navbar />
             <Header />
             <Body />
+            <Content />
             <Footer />
         </div>
     )

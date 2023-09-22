@@ -10,7 +10,7 @@ export default function Navbar() {
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <img src={Logo} alt="Modesto" className="w-[316px] h-[61px]" />
+                        <img src={Logo} alt="Modesto" className="w-60 md:w-[316px]  h-[61px]" />
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
