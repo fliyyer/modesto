@@ -1,16 +1,19 @@
 import { useState } from "react";
 import Logo from '../assets/Logo.png'
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Navbar() {
     const [navbar, setNavbar] = useState(false);
+    const location = useLocation();
 
     return (
         <nav className="w-full bg-white shadow">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <img src={Logo} alt="Modesto" className="w-60 md:w-[316px]  h-[61px]" />
+                        <Link to='/'>
+                            <img src={Logo} alt="Modesto" className="w-60 md:w-[316px]  h-[61px]" />
+                        </Link>
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -56,22 +59,22 @@ export default function Navbar() {
                     >
                         <ul className="items-center justify-center space-y-10 md:flex md:space-x-8 md:space-y-0">
                             <Link to="/">
-                                <li className="text-[#a6a6a6] font-bold hover:text-[#000]">
+                                <li className={`font-bold hover:text-[#000] ${location.pathname === '/' ? 'text-[#000]' : 'text-[#a6a6a6]'}`}>
                                     Home
                                 </li>
                             </Link>
                             <Link to="/">
-                                <li className="text-[#a6a6a6] font-bold hover:text-[#000]">
+                                <li className={`font-bold hover:text-[#000] ${location.pathname === '/about' ? 'text-[#000]' : 'text-[#a6a6a6]'}`}>
                                     About Us
                                 </li>
                             </Link>
                             <Link to="/product">
-                                <li className="text-[#a6a6a6] font-bold hover:text-[#000]">
+                                <li className={`font-bold hover:text-[#000] ${location.pathname === '/product' ? 'text-[#000]' : 'text-[#a6a6a6]'}`}>
                                     Product
                                 </li>
                             </Link>
-                            <Link to="/">
-                                <li className="text-[#a6a6a6] font-bold hover:text-[#000]">
+                            <Link to="/contact">
+                                <li className={`font-bold hover:text-[#000] ${location.pathname === '/contact' ? 'text-[#000]' : 'text-[#a6a6a6]'}`}>
                                     Contact Us
                                 </li>
                             </Link>

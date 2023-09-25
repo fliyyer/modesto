@@ -1,14 +1,16 @@
-import React from 'react'
+import React from 'react';
 
 const CardServices = (props) => {
     const { title, desc, img } = props;
     return (
-        <div className='w-[309] h-[334px] md:w-[409px] md:h-[434px]  rounded-2xl'>
-            <img className='w-[409px] h-[409px] shadow-lg rounded-2xl' src={img} alt="" />
-            <h1 className='mt-[23px] text-center md:text-left text-[30px] font-semibold leading-[30px]'>{title}</h1>
-            <p className='mt-[19.3px] w-auto text-justify text-lg font-medium leading-[30px] text-[#a6a6a6]'>{desc}</p>
+        <div className='w-full md:w-[309px] h-[auto] md:h-[434px] rounded-2xl'>
+            <img className='w-full h-[200px] md:h-[309px] object-cover rounded-t-2xl' src={img} alt="" />
+            <div className='p-4'>
+                <h1 className='text-center md:text-left text-xl md:text-2xl font-semibold leading-[36px] text-[#191A15]'>{title}</h1>
+                <p className='mt-2 md:mt-4 md:text-justify text-base md:text-lg text-center font-medium leading-[30px] text-[#a6a6a6]'>{desc}</p>
+            </div>
         </div>
-    )
-}
+    );
+};
 
-export default CardServices
+export default CardServices;
